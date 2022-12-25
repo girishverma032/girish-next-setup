@@ -19,59 +19,58 @@
 // };
 // export const CountContext = createContext();
 // const Home = () => {
-    // const [count, dispatch] = useReducer(reducer, initialState);
-    // const [result, updateResult] = useState(0);
-    // const [firstNumber, updateFirstNumber] = useState(0);
-    // const [secondNumber, updateSecondNumber] = useState(0);
-    //
-    // const addition = () => {
-    //     updateResult(parseFloat(firstNumber) + parseFloat(secondNumber));
-    // };
-    // const subtraction = () => {
-    //     updateResult(parseFloat(firstNumber) - parseFloat(secondNumber));
-    // };
-    // const multiplication = () => {
-    //     updateResult(parseFloat(firstNumber) * parseFloat(secondNumber));
-    // };
-    // const division = () => {
-    //     updateResult(parseFloat(firstNumber) / parseFloat(secondNumber));
-    // };
-    //
-    // return (
-    //     <>
-    //         <CountContext.Provider value={{
-    //             countState: count,
-    //             countDispatch: dispatch,
-    //             addition,
-    //             division,
-    //             firstNumber,
-    //             multiplication,
-    //             result,
-    //             secondNumber,
-    //             subtraction,
-    //             updateFirstNumber,
-    //             updateSecondNumber,
-    //         }}>
-    //             <A/>
-    //             <B/>
-    //             <Acm/>
-    //             <Bcm/>
-    //         </CountContext.Provider>
-    //     </>
-    // )
+// const [count, dispatch] = useReducer(reducer, initialState);
+// const [result, updateResult] = useState(0);
+// const [firstNumber, updateFirstNumber] = useState(0);
+// const [secondNumber, updateSecondNumber] = useState(0);
+//
+// const addition = () => {
+//     updateResult(parseFloat(firstNumber) + parseFloat(secondNumber));
+// };
+// const subtraction = () => {
+//     updateResult(parseFloat(firstNumber) - parseFloat(secondNumber));
+// };
+// const multiplication = () => {
+//     updateResult(parseFloat(firstNumber) * parseFloat(secondNumber));
+// };
+// const division = () => {
+//     updateResult(parseFloat(firstNumber) / parseFloat(secondNumber));
+// };
+//
+// return (
+//     <>
+//         <CountContext.Provider value={{
+//             countState: count,
+//             countDispatch: dispatch,
+//             addition,
+//             division,
+//             firstNumber,
+//             multiplication,
+//             result,
+//             secondNumber,
+//             subtraction,
+//             updateFirstNumber,
+//             updateSecondNumber,
+//         }}>
+//             <A/>
+//             <B/>
+//             <Acm/>
+//             <Bcm/>
+//         </CountContext.Provider>
+//     </>
+// )
 //     return (
 //         <>Hello</>
 //     )
 // }
 // export default Home;
 
-
-import React from 'react'
+import React from 'react';
 
 export default function index() {
-    return (
-        <div>
-            <h1>This is File</h1>
-        </div>
-    )
+  return (
+    <div>
+      <h1>This is File</h1>
+    </div>
+  );
 }

@@ -1,28 +1,14 @@
-import {createSelector} from 'reselect';
-import {initialState} from "./reducer";
+import { createSelector } from 'reselect';
+import { initialState } from './reducer';
 
-const selectHomeDomain = state => state.home || initialState;
+const selectHomeDomain = (state) => state.home || initialState;
 
-const makeSelectHome = () =>
-    createSelector(
-        selectHomeDomain,
-        substate => substate
-    );
+const makeSelectHome = () => createSelector(selectHomeDomain, (substate) => substate);
 
-const makeSelectHomeRecord = () =>
-    createSelector(
-        selectHomeDomain,
-        substate => substate.data
-    );
+const makeSelectHomeRecord = () => createSelector(selectHomeDomain, (substate) => substate.data);
 
 const makeSelectHomeLoading = () =>
-    createSelector(
-        selectHomeDomain,
-        substate => substate.loading
-    );
+  createSelector(selectHomeDomain, (substate) => substate.loading);
 
 export default makeSelectHome;
-export {
-    makeSelectHomeRecord,
-    makeSelectHomeLoading
-};
+export { makeSelectHomeRecord, makeSelectHomeLoading };

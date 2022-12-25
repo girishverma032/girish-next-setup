@@ -1,9 +1,7 @@
 import React from 'react';
 
-function Bcm(props) {
-    return (
-        <>Bcm</>
-    );
+function Bcm() {
+  return <>Bcm</>;
 }
 
 export default Bcm;
