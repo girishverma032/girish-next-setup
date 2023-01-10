@@ -6,11 +6,11 @@ import { getData } from './action';
 import { compose } from 'redux';
 import PropTypes from 'prop-types';
 
-const Index = ({ data, loading, getRecord }) => {
+const Index = ({ data, getRecord }) => {
+  console.log(data);
   useEffect(() => {
     getRecord();
   }, []);
-  console.log({ data, loading });
   return <div>Home</div>;
 };
 
